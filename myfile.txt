@@ -1,0 +1,2 @@
+hello this is a txt file
+this is the second line /n adding a new line to the file/n adding a new line to the file

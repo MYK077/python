@@ -1,0 +1,1 @@
+using write overwrites the file or creates the new file with the content if the file is not present
