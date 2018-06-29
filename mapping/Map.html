@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_334315c3761549e28e80b9b8dc7b0f24 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_334315c3761549e28e80b9b8dc7b0f24" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_334315c3761549e28e80b9b8dc7b0f24 = L.map(
+                                  'map_334315c3761549e28e80b9b8dc7b0f24',
+                                  {center: [45.5236,-122.675],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_948cf7cd209a4d91bed1add7f5118cbd = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_334315c3761549e28e80b9b8dc7b0f24);
+        
+    
+            var feature_group_a12eac4fba4e4f258795ac63d98a82e7 = L.featureGroup(
+                ).addTo(map_334315c3761549e28e80b9b8dc7b0f24);
+        
+    
+
+            var marker_a94a473b22004890894005d7a0838168 = L.marker(
+                [45.3288,-121.6625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_a12eac4fba4e4f258795ac63d98a82e7);
+            
+    
+
+                var icon_6f33eb064b3e41e4be79587ffb1d8050 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a94a473b22004890894005d7a0838168.setIcon(icon_6f33eb064b3e41e4be79587ffb1d8050);
+            
+    
+            var popup_220af4fa45344349b11bca7f5b4566fc = L.popup({maxWidth: '300'});
+
+            
+                var html_d704740154ba4cfcb9344be7e8bd0324 = $('<div id="html_d704740154ba4cfcb9344be7e8bd0324" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_220af4fa45344349b11bca7f5b4566fc.setContent(html_d704740154ba4cfcb9344be7e8bd0324);
+            
+
+            marker_a94a473b22004890894005d7a0838168.bindPopup(popup_220af4fa45344349b11bca7f5b4566fc);
+
+            
+        
+    
+
+            var marker_0a9462b5a87d40d9a4bde228d9e7a73e = L.marker(
+                [40.3288,-120.6625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_a12eac4fba4e4f258795ac63d98a82e7);
+            
+    
+
+                var icon_4aa2b7258499495f948ee0906995279c = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a9462b5a87d40d9a4bde228d9e7a73e.setIcon(icon_4aa2b7258499495f948ee0906995279c);
+            
+    
+            var popup_9d86271a65d94e788b1c923efbeef66f = L.popup({maxWidth: '300'});
+
+            
+                var html_0ae4b2bf34ff4e9799fe2bb6f10b70f4 = $('<div id="html_0ae4b2bf34ff4e9799fe2bb6f10b70f4" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_9d86271a65d94e788b1c923efbeef66f.setContent(html_0ae4b2bf34ff4e9799fe2bb6f10b70f4);
+            
+
+            marker_0a9462b5a87d40d9a4bde228d9e7a73e.bindPopup(popup_9d86271a65d94e788b1c923efbeef66f);
+
+            
+        
+</script>
