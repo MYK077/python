@@ -1,14 +1,22 @@
 import folium
-map = folium.Map(location=[45.5236, -122.6750],tiles='Mapbox Bright',zoom_start = 6)
+import pandas
 
+data = pandas.read_csv("Volcanoes_USA.txt")
+
+lat = list(data["LAT"])
+lon = list(data["LON"])
+# ELEV in file is column name with elevation
+elevation = list(data["ELEV"])
+
+map = folium.Map(location=[38.58, 99.09],tiles='Mapbox Bright',zoom_start = 4)
 # to make our code more organized we use FeatureGroup
 
-fg = folium.FeatureGroup(name = "My Map")
+fg = folium.FeatureGroup(name ="My Map")
 
 # using a for loop to add multiple markers
 
-for coordinates in [[45.3288, -121.6625],[40.3288, -120.6625]]:
-    fg.add_child(folium.Marker(coordinates,popup='Mt. Hood Meadows',icon=folium.Icon(icon='cloud', color='green')))
+for lat, lon, elev in zip(lat,lon,elevation):
+    fg.add_child(folium.Marker(location=[lat,lon],popup=folium.Popup(str(elev)+"m",parse_html = True),icon=folium.Icon(icon='cloud', color='green')))
 
 
 
@@ -16,7 +24,7 @@ for coordinates in [[45.3288, -121.6625],[40.3288, -120.6625]]:
 
 map.add_child(fg)
 
-map.save("Map.html")
+map.save("Map1.html")
 
 # map = folium.Map(location = [38.58, -99.09], zoom_start = 6 , tiles = "Mapbox Bright")
 #
